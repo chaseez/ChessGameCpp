@@ -5,7 +5,7 @@
 #ifndef CHESSGAMECPP_PAWN_H
 #define CHESSGAMECPP_PAWN_H
 
-
+#include <iostream>
 #include "Piece.h"
 
 class Pawn : public Piece {

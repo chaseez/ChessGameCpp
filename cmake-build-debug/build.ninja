@@ -61,6 +61,12 @@ build CMakeFiles/ChessGameCpp.dir/Pawn.cpp.obj: CXX_COMPILER__ChessGameCpp_Debug
   OBJECT_DIR = CMakeFiles\ChessGameCpp.dir
   OBJECT_FILE_DIR = CMakeFiles\ChessGameCpp.dir
 
+build CMakeFiles/ChessGameCpp.dir/Player.cpp.obj: CXX_COMPILER__ChessGameCpp_Debug C$:/Users/chaseez/CLionProjects/ChessGameCpp/Player.cpp || cmake_object_order_depends_target_ChessGameCpp
+  DEP_FILE = CMakeFiles\ChessGameCpp.dir\Player.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ChessGameCpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\ChessGameCpp.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ChessGameCpp
@@ -69,7 +75,7 @@ build CMakeFiles/ChessGameCpp.dir/Pawn.cpp.obj: CXX_COMPILER__ChessGameCpp_Debug
 #############################################
 # Link the executable ChessGameCpp.exe
 
-build ChessGameCpp.exe: CXX_EXECUTABLE_LINKER__ChessGameCpp_Debug CMakeFiles/ChessGameCpp.dir/main.cpp.obj CMakeFiles/ChessGameCpp.dir/Pawn.cpp.obj
+build ChessGameCpp.exe: CXX_EXECUTABLE_LINKER__ChessGameCpp_Debug CMakeFiles/ChessGameCpp.dir/main.cpp.obj CMakeFiles/ChessGameCpp.dir/Pawn.cpp.obj CMakeFiles/ChessGameCpp.dir/Player.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ChessGameCpp.dir

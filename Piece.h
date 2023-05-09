@@ -23,9 +23,9 @@ class Piece {
 public:
     PieceValue value;
     Color color;
-    virtual void move();
-    virtual void take();
-    virtual void checkForCheck();
+    virtual void move() = 0;
+    virtual void take() = 0;
+    virtual void checkForCheck() = 0;
 };
 
 

@@ -3,4 +3,4 @@ project(ChessGameCpp)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(ChessGameCpp main.cpp Piece.h Pawn.cpp Pawn.h)
+add_executable(ChessGameCpp main.cpp Piece.h Pawn.cpp Pawn.h Player.cpp Player.h)
