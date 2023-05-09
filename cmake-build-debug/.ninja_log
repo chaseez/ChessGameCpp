@@ -1,0 +1,6 @@
+# ninja log v5
+1	634	7053546382441654	CMakeFiles/ChessGameCpp.dir/main.cpp.obj	2dd53d51ccbb627e
+638	977	7053546385842575	ChessGameCpp.exe	20647dee0b947f90
+13	511	7053664403281594	CMakeFiles/ChessGameCpp.dir/Pawn.cpp.obj	a665fdc595841f3c
+75	763	7053664405804961	CMakeFiles/ChessGameCpp.dir/main.cpp.obj	2dd53d51ccbb627e
+764	1261	7053664410752296	ChessGameCpp.exe	8501d7e14e1797f8

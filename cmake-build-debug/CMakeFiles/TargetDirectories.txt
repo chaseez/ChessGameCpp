@@ -1,0 +1,3 @@
+C:/Users/chaseez/CLionProjects/ChessGameCpp/cmake-build-debug/CMakeFiles/ChessGameCpp.dir
+C:/Users/chaseez/CLionProjects/ChessGameCpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/chaseez/CLionProjects/ChessGameCpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
