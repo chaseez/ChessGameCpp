@@ -67,6 +67,36 @@ build CMakeFiles/ChessGameCpp.dir/Player.cpp.obj: CXX_COMPILER__ChessGameCpp_Deb
   OBJECT_DIR = CMakeFiles\ChessGameCpp.dir
   OBJECT_FILE_DIR = CMakeFiles\ChessGameCpp.dir
 
+build CMakeFiles/ChessGameCpp.dir/Knight.cpp.obj: CXX_COMPILER__ChessGameCpp_Debug C$:/Users/chaseez/CLionProjects/ChessGameCpp/Knight.cpp || cmake_object_order_depends_target_ChessGameCpp
+  DEP_FILE = CMakeFiles\ChessGameCpp.dir\Knight.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ChessGameCpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\ChessGameCpp.dir
+
+build CMakeFiles/ChessGameCpp.dir/Rook.cpp.obj: CXX_COMPILER__ChessGameCpp_Debug C$:/Users/chaseez/CLionProjects/ChessGameCpp/Rook.cpp || cmake_object_order_depends_target_ChessGameCpp
+  DEP_FILE = CMakeFiles\ChessGameCpp.dir\Rook.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ChessGameCpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\ChessGameCpp.dir
+
+build CMakeFiles/ChessGameCpp.dir/Bishop.cpp.obj: CXX_COMPILER__ChessGameCpp_Debug C$:/Users/chaseez/CLionProjects/ChessGameCpp/Bishop.cpp || cmake_object_order_depends_target_ChessGameCpp
+  DEP_FILE = CMakeFiles\ChessGameCpp.dir\Bishop.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ChessGameCpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\ChessGameCpp.dir
+
+build CMakeFiles/ChessGameCpp.dir/Queen.cpp.obj: CXX_COMPILER__ChessGameCpp_Debug C$:/Users/chaseez/CLionProjects/ChessGameCpp/Queen.cpp || cmake_object_order_depends_target_ChessGameCpp
+  DEP_FILE = CMakeFiles\ChessGameCpp.dir\Queen.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ChessGameCpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\ChessGameCpp.dir
+
+build CMakeFiles/ChessGameCpp.dir/King.cpp.obj: CXX_COMPILER__ChessGameCpp_Debug C$:/Users/chaseez/CLionProjects/ChessGameCpp/King.cpp || cmake_object_order_depends_target_ChessGameCpp
+  DEP_FILE = CMakeFiles\ChessGameCpp.dir\King.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ChessGameCpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\ChessGameCpp.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ChessGameCpp
@@ -75,7 +105,7 @@ build CMakeFiles/ChessGameCpp.dir/Player.cpp.obj: CXX_COMPILER__ChessGameCpp_Deb
 #############################################
 # Link the executable ChessGameCpp.exe
 
-build ChessGameCpp.exe: CXX_EXECUTABLE_LINKER__ChessGameCpp_Debug CMakeFiles/ChessGameCpp.dir/main.cpp.obj CMakeFiles/ChessGameCpp.dir/Pawn.cpp.obj CMakeFiles/ChessGameCpp.dir/Player.cpp.obj
+build ChessGameCpp.exe: CXX_EXECUTABLE_LINKER__ChessGameCpp_Debug CMakeFiles/ChessGameCpp.dir/main.cpp.obj CMakeFiles/ChessGameCpp.dir/Pawn.cpp.obj CMakeFiles/ChessGameCpp.dir/Player.cpp.obj CMakeFiles/ChessGameCpp.dir/Knight.cpp.obj CMakeFiles/ChessGameCpp.dir/Rook.cpp.obj CMakeFiles/ChessGameCpp.dir/Bishop.cpp.obj CMakeFiles/ChessGameCpp.dir/Queen.cpp.obj CMakeFiles/ChessGameCpp.dir/King.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ChessGameCpp.dir

@@ -2,15 +2,16 @@
 // Created by chaseez on 5/9/2023.
 //
 
-#ifndef CHESSGAMECPP_PAWN_H
-#define CHESSGAMECPP_PAWN_H
+#ifndef CHESSGAMECPP_KNIGHT_H
+#define CHESSGAMECPP_KNIGHT_H
+
 
 #include "Piece.h"
 
-class Pawn : public Piece {
+class Knight : public Piece {
 public:
-    Pawn(Color team){
-        value = PAWN;
+    Knight(Color team){
+        value = KNIGHT;
         this->team = team;
     }
 
@@ -18,8 +19,7 @@ public:
     void move() override;
     void take() override;
     void checkForCheck() override;
-
 };
 
 
-#endif //CHESSGAMECPP_PAWN_H
+#endif //CHESSGAMECPP_KNIGHT_H

@@ -2,20 +2,20 @@
 // Created by chaseez on 5/9/2023.
 //
 
-#include "Pawn.h"
+#include "Bishop.h"
 
-void Pawn::checkForCheck() {
+void Bishop::checkForCheck() {
     std::cout << "Entering checkForCheck()\n" << std::endl;
 }
 
-void Pawn::move() {
+void Bishop::move() {
     std::cout << "Entering move()" << std::endl;
 }
 
-void Pawn::take() {
+void Bishop::take() {
     std::cout << "Entering take()" << std::endl;
 }
 
-void Pawn::showMoves() {
+void Bishop::showMoves() {
     std::cout << "Entering showMoves()" << std::endl;
 }

@@ -2,20 +2,20 @@
 // Created by chaseez on 5/9/2023.
 //
 
-#include "Pawn.h"
+#include "Queen.h"
 
-void Pawn::checkForCheck() {
+void Queen::checkForCheck() {
     std::cout << "Entering checkForCheck()\n" << std::endl;
 }
 
-void Pawn::move() {
+void Queen::move() {
     std::cout << "Entering move()" << std::endl;
 }
 
-void Pawn::take() {
+void Queen::take() {
     std::cout << "Entering take()" << std::endl;
 }
 
-void Pawn::showMoves() {
+void Queen::showMoves() {
     std::cout << "Entering showMoves()" << std::endl;
 }

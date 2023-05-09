@@ -2,20 +2,20 @@
 // Created by chaseez on 5/9/2023.
 //
 
-#include "Pawn.h"
+#include "Rook.h"
 
-void Pawn::checkForCheck() {
+void Rook::checkForCheck() {
     std::cout << "Entering checkForCheck()\n" << std::endl;
 }
 
-void Pawn::move() {
+void Rook::move() {
     std::cout << "Entering move()" << std::endl;
 }
 
-void Pawn::take() {
+void Rook::take() {
     std::cout << "Entering take()" << std::endl;
 }
 
-void Pawn::showMoves() {
+void Rook::showMoves() {
     std::cout << "Entering showMoves()" << std::endl;
 }

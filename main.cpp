@@ -3,9 +3,8 @@
 #include "Player.h"
 
 int main() {
-
-    std::cout << "I wanna goooooo hoooome";
-
     Player white = Player(WHITE);
+    Player black = Player(BLACK);
+
     return 0;
 }

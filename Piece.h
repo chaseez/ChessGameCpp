@@ -5,6 +5,8 @@
 #ifndef CHESSGAMECPP_PIECE_H
 #define CHESSGAMECPP_PIECE_H
 
+#include <iostream>
+
 enum PieceValue {
     PAWN=1,
     ROOK=3,
@@ -22,7 +24,8 @@ enum Color {
 class Piece {
 public:
     PieceValue value;
-    Color color;
+    Color team;
+    virtual void showMoves() = 0;
     virtual void move() = 0;
     virtual void take() = 0;
     virtual void checkForCheck() = 0;
