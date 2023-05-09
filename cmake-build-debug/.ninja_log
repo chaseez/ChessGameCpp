@@ -1,14 +1,10 @@
 # ninja log v5
-18	873	7053710439950475	CMakeFiles/ChessGameCpp.dir/main.cpp.obj	2dd53d51ccbb627e
-873	1203	7053710443221813	ChessGameCpp.exe	24bd4e14e68f9c63
-4	733	7053710438534221	CMakeFiles/ChessGameCpp.dir/Pawn.cpp.obj	a665fdc595841f3c
-31	846	7053710439681192	CMakeFiles/ChessGameCpp.dir/Player.cpp.obj	c35114c3ea7ed719
-49	1320	7053719631439441	CMakeFiles/ChessGameCpp.dir/Knight.cpp.obj	abe00e3557f415d3
-34	1339	7053719631439441	CMakeFiles/ChessGameCpp.dir/Rook.cpp.obj	f6aaea8843be8f96
-20	1352	7053719631768583	CMakeFiles/ChessGameCpp.dir/Pawn.cpp.obj	a665fdc595841f3c
 5	1409	7053719632347027	CMakeFiles/ChessGameCpp.dir/main.cpp.obj	2dd53d51ccbb627e
 84	1454	7053719632805795	CMakeFiles/ChessGameCpp.dir/Bishop.cpp.obj	bcbf6b747256aead
-114	1474	7053719633035247	CMakeFiles/ChessGameCpp.dir/Queen.cpp.obj	5c8b87dac40e853c
-65	1490	7053719633204729	CMakeFiles/ChessGameCpp.dir/Player.cpp.obj	c35114c3ea7ed719
-146	1503	7053719633344363	CMakeFiles/ChessGameCpp.dir/King.cpp.obj	8d82632b123a8f18
 1503	1933	7053719637583070	ChessGameCpp.exe	3795b6499e2689e0
+20	1352	7053719631768583	CMakeFiles/ChessGameCpp.dir/Pawn.cpp.obj	a665fdc595841f3c
+34	1339	7053719631439441	CMakeFiles/ChessGameCpp.dir/Rook.cpp.obj	f6aaea8843be8f96
+65	1490	7053719633204729	CMakeFiles/ChessGameCpp.dir/Player.cpp.obj	c35114c3ea7ed719
+49	1320	7053719631439441	CMakeFiles/ChessGameCpp.dir/Knight.cpp.obj	abe00e3557f415d3
+114	1474	7053719633035247	CMakeFiles/ChessGameCpp.dir/Queen.cpp.obj	5c8b87dac40e853c
+146	1503	7053719633344363	CMakeFiles/ChessGameCpp.dir/King.cpp.obj	8d82632b123a8f18
