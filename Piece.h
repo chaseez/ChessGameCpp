@@ -13,7 +13,7 @@ enum PieceValue {
     KNIGHT=5,
     BISHOP=7,
     QUEEN=9,
-    KING=-1
+    KING=-2
 };
 
 enum Color {

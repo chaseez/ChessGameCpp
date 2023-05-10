@@ -18,10 +18,12 @@ void Player::fillPieces() {
         if(i >= 12 and i < 14) pieces[i] = new Bishop(team);
         if(i == 14) pieces[i] = new Queen(team);
         if(i == 15) pieces[i] = new King(team);
-        std::cout << i << std::endl;
-        pieces[i]->showMoves();
-        pieces[i]->move();
-        pieces[i]->take();
-        pieces[i]->checkForCheck();
+//        std::cout << i << std::endl;
+//        pieces[i]->showMoves();
+//        pieces[i]->move();
+//        pieces[i]->take();
+//        pieces[i]->checkForCheck();
     }
 }
+
+std::vector<Piece*> Player::getPieces() const { return pieces; }

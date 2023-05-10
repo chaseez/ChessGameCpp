@@ -20,10 +20,13 @@ private:
 
 public:
     Player(Color team) {
+        points = 0;
         this->team = team;
         pieces = std::vector<Piece*>(NUM_PIECES);
         fillPieces();
     }
+
+    std::vector<Piece*> getPieces() const;
 };
 
 
