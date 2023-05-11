@@ -15,6 +15,7 @@ public:
     const static int BOARD_HEIGHT = 8;
     const static int MASK_WIDTH = 16;
     const static int MASK_HEIGHT = 16;
+    const static int POSSIBLE_MOVE_VALUE = -5;
     int** board;
     int** mask;
 

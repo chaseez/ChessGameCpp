@@ -39,6 +39,7 @@ public:
     }
 
     std::vector<Piece*> getPieces() const;
+    bool inCheck() const;
 };
 
 

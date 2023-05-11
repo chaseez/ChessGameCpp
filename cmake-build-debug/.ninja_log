@@ -9,3 +9,16 @@
 18	981	7055409883876797	CMakeFiles/ChessGameCpp.dir/Player.cpp.obj	c35114c3ea7ed719
 120	988	7055409883976530	CMakeFiles/ChessGameCpp.dir/King.cpp.obj	8d82632b123a8f18
 4	676	7055419540927277	CMakeFiles/ChessGameCpp.dir/Board.cpp.obj	72ea85d0e8a1fc2e
+27	828	7055442966746957	CMakeFiles/ChessGameCpp.dir/Knight.cpp.obj	abe00e3557f415d3
+5	868	7055442967145900	CMakeFiles/ChessGameCpp.dir/Pawn.cpp.obj	a665fdc595841f3c
+52	909	7055442967574758	CMakeFiles/ChessGameCpp.dir/Rook.cpp.obj	f6aaea8843be8f96
+65	928	7055442967734325	CMakeFiles/ChessGameCpp.dir/Bishop.cpp.obj	bcbf6b747256aead
+118	1000	7055442968492314	CMakeFiles/ChessGameCpp.dir/Queen.cpp.obj	5c8b87dac40e853c
+16	1005	7055442968492314	CMakeFiles/ChessGameCpp.dir/main.cpp.obj	2dd53d51ccbb627e
+39	1010	7055442968562120	CMakeFiles/ChessGameCpp.dir/Player.cpp.obj	c35114c3ea7ed719
+148	1021	7055442968721687	CMakeFiles/ChessGameCpp.dir/King.cpp.obj	8d82632b123a8f18
+89	1102	7055442969519941	CMakeFiles/ChessGameCpp.dir/Board.cpp.obj	72ea85d0e8a1fc2e
+1102	1444	7055442972890402	ChessGameCpp.exe	7fd00b90b15f42d3
+16	708	7055457104649121	CMakeFiles/ChessGameCpp.dir/Board.cpp.obj	72ea85d0e8a1fc2e
+4	739	7055457104959481	CMakeFiles/ChessGameCpp.dir/main.cpp.obj	2dd53d51ccbb627e
+739	1108	7055457108599911	ChessGameCpp.exe	7fd00b90b15f42d3

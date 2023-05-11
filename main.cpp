@@ -37,6 +37,7 @@ void validateInput(std::string& coord, const Board& board, bool turn) {
     if(number < 0 or number >= 8) valid = false;
 
     while(!valid) {
+        board.printBoard();
         std::cout << "\nInvalid input" << std::endl;
         std::cout << "Please choose a coordinate on the board between 'a'-'f' and 1-8" << std::endl;
         coord = promptUser();
@@ -70,41 +71,41 @@ void validateInput(std::string& coord, const Board& board, bool turn) {
         else valid = false;
     }
 
-    if(!valid) {
-        while(!valid) {
-            std::cout << "\nInvalid input" << std::endl;
-            std::cout << "That's not your piece" << std::endl;
-            coord = promptUser();
-            if(coord.length() != 2) continue;
+    while(!valid) {
+        board.printBoard();
+        std::cout << "\nInvalid input" << std::endl;
+        std::cout << "That's not your piece" << std::endl;
+        coord = promptUser();
+        if(coord.length() != 2) continue;
 
-            // Making the ascii numbers correspond with a column
-            letter = std::tolower(coord[0]) - 'a';
+        // Making the ascii numbers correspond with a column
+        letter = std::tolower(coord[0]) - 'a';
 
-            // Adjusting the number to fit the array index
-            temp = coord.substr(1);
-            number = std::stoi(temp) - 1;
+        // Adjusting the number to fit the array index
+        temp = coord.substr(1);
+        number = std::stoi(temp) - 1;
 
-            if(letter < 0 or letter >= 8) continue;
-            if(number < 0 or number >= 8) continue;
+        if(letter < 0 or letter >= 8) continue;
+        if(number < 0 or number >= 8) continue;
 
-            pieceType = board.getBoard()[number][letter];
+        pieceType = board.getBoard()[number][letter];
 
-            // true == White's turn
-            // false == Black's turn
-            if(turn) {
-                if(pieceType == 1 or pieceType == 3 or pieceType == 5 or pieceType == 7 or pieceType == 9 or pieceType == -2) valid = true;
-                else continue;
-            }
-            else {
-                if(pieceType == 2 or pieceType == 4 or pieceType == 6 or pieceType == 8 or pieceType == 10 or pieceType == -1) valid = true;
-                else continue;
-            }
+        // true == White's turn
+        // false == Black's turn
+        if(turn) {
+            if(pieceType == 1 or pieceType == 3 or pieceType == 5 or pieceType == 7 or pieceType == 9 or pieceType == -2) valid = true;
+            else continue;
+        }
+        else {
+            if(pieceType == 2 or pieceType == 4 or pieceType == 6 or pieceType == 8 or pieceType == 10 or pieceType == -1) valid = true;
+            else continue;
         }
     }
 
+
 }
 
-bool canMovePiece(const std::string& coordinates, Board board, const std::vector<Piece*>& pieces) {
+bool canMovePiece(const std::string& coordinates, const Board& board, const std::vector<Piece*>& pieces) {
     std::string parsedCoords = parseCoordinates(coordinates);
 
     std::string colStr = parsedCoords.substr(0,1);
@@ -131,6 +132,11 @@ int main() {
 
     Board board = Board();
     board.populateBoard(white, black);
+
+    board.populateMask();
+    std::cout << "Printing the mask: " << std::endl;
+    board.printMask();
+    std::cout << std::endl;
 
     board.printBoard();
 

@@ -269,6 +269,8 @@ void Board::populateBoard(const Player& white, const Player& black) const {
 }
 
 void Board::populateMask() {
+    for(int i = 4; i < BOARD_WIDTH + 4; ++i)
+        for(int j = 4; j < BOARD_HEIGHT + 4; ++j) mask[i][j] = board[i-4][j-4];
 
 }
 

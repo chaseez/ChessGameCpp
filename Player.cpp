@@ -23,3 +23,7 @@ void Player::fillPieces() {
 
 std::vector<Piece*> Player::getPieces() const { return pieces; }
 
+bool Player::inCheck() const {
+
+}
+
