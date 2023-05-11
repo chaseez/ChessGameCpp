@@ -11,6 +11,10 @@
 
 class Board {
 public:
+    const static int BOARD_WIDTH = 8;
+    const static int BOARD_HEIGHT = 8;
+    const static int MASK_WIDTH = 16;
+    const static int MASK_HEIGHT = 16;
     int** board;
     int** mask;
 
@@ -36,20 +40,16 @@ public:
         delete[] mask;
     }
 
-    void updateBoard(int x, int y);
-    static bool validMove(int x, int y);
+    void updateBoard(int col, int row);
+    static bool validMove(int col, int row);
+    bool canMovePiece(Piece* piece) const;
     void printBoard() const;
     void printMask() const;
-    void populateBoard(const Player& white, const Player& black);
+    void populateBoard(const Player& white, const Player& black) const;
     void populateMask();
     int** getBoard() const;
     int** getMask() const;
 
-private:
-    const static int BOARD_WIDTH = 8;
-    const static int BOARD_HEIGHT = 8;
-    const static int MASK_WIDTH = 16;
-    const static int MASK_HEIGHT = 16;
 };
 
 

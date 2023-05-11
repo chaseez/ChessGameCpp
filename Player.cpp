@@ -3,11 +3,6 @@
 //
 
 #include "Player.h"
-#include "Rook.h"
-#include "Knight.h"
-#include "Bishop.h"
-#include "Queen.h"
-#include "King.h"
 
 
 void Player::fillPieces() {
@@ -27,3 +22,4 @@ void Player::fillPieces() {
 }
 
 std::vector<Piece*> Player::getPieces() const { return pieces; }
+

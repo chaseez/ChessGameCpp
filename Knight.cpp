@@ -5,17 +5,22 @@
 #include "Knight.h"
 
 void Knight::checkForCheck() {
-    std::cout << "Entering checkForCheck()\n" << std::endl;
+    std::cout << "Entering Knight::checkForCheck()\n" << std::endl;
 }
 
 void Knight::move() {
-    std::cout << "Entering move()" << std::endl;
+    std::cout << "Entering Knight::move()" << std::endl;
 }
 
 void Knight::take() {
-    std::cout << "Entering take()" << std::endl;
+    std::cout << "Entering Knight::take()" << std::endl;
 }
 
 void Knight::showMoves() {
-    std::cout << "Entering showMoves()" << std::endl;
+    std::cout << "Entering Knight::showMoves()" << std::endl;
+}
+
+bool Knight::canMove() {
+    std::cout << "Entering Knight::canMove()" << std::endl;
+    return false;
 }

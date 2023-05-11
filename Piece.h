@@ -25,10 +25,21 @@ class Piece {
 public:
     PieceValue value;
     Color team;
+
+    virtual ~Piece() = default;
+
     virtual void showMoves() = 0;
     virtual void move() = 0;
     virtual void take() = 0;
     virtual void checkForCheck() = 0;
+    virtual bool canMove() = 0;
+    virtual int getRow() = 0;
+    virtual void setRow(int row) = 0;
+    virtual int getColumn() = 0;
+    virtual void setColumn(int col) = 0;
+protected:
+    int row;
+    int column;
 };
 
 

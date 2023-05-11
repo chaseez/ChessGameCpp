@@ -10,16 +10,28 @@ std::string promptUser() {
     return coordinates;
 }
 
+std::string parseCoordinates(const std::string& coordinates) {
+    // Making the ascii numbers correspond with a column
+    int letter = std::tolower(coordinates[0]) - 'a';
+
+    // Adjusting the number to fit the array index
+    std::string temp = coordinates.substr(1);
+    int number = std::stoi(temp) - 1;
+
+    return std::to_string(letter) + std::to_string(number);
+}
+
 void validateInput(std::string& coord, const Board& board, bool turn) {
     bool valid = true;
     if(coord.length() != 2) valid = false;
 
-    // Making the ascii numbers correspond with a column
-    int letter = std::tolower(coord[0]) - 'a';
+    std::string temp = parseCoordinates(coord);
 
-    // Adjusting the number to fit the array index
-    std::string temp = coord.substr(1);
-    int number = std::stoi(temp) - 1;
+    std::string colStr = temp.substr(0,1);
+    int letter = std::stoi(colStr);
+
+    std::string rowStr = temp.substr(1);
+    int number = std::stoi(rowStr);
 
     if(letter < 0 or letter >= 8) valid = false;
     if(number < 0 or number >= 8) valid = false;
@@ -43,7 +55,9 @@ void validateInput(std::string& coord, const Board& board, bool turn) {
         valid = true;
     }
 
-    int pieceType = board.getBoard()[number][letter];
+    int** tempBoard = board.getBoard();
+
+    int pieceType = tempBoard[number][letter];
 
     // true == White's turn
     // false == Black's turn
@@ -90,6 +104,27 @@ void validateInput(std::string& coord, const Board& board, bool turn) {
 
 }
 
+bool canMovePiece(const std::string& coordinates, Board board, const std::vector<Piece*>& pieces) {
+    std::string parsedCoords = parseCoordinates(coordinates);
+
+    std::string colStr = parsedCoords.substr(0,1);
+    int col = std::stoi(colStr);
+
+    std::string rowStr = parsedCoords.substr(1);
+    int row = std::stoi(rowStr);
+
+    int pieceValue = board.getBoard()[row][col];
+
+    for(Piece* piece: pieces) {
+        if(piece->value == pieceValue - piece->team) {
+            if(piece->getRow() == row and piece->getColumn() == col) return board.canMovePiece(piece);
+        }
+    }
+
+    return false;
+}
+
+
 int main() {
     Player white = Player(WHITE);
     Player black = Player(BLACK);
@@ -106,11 +141,53 @@ int main() {
     // false == Black's turn
     while(!winning)
     {
+        if(turn) std::cout << "White's";
+        else std::cout <<"Black's";
+        std::cout << " turn";
+
         std::string coordinates;
         coordinates = promptUser();
 
         validateInput(coordinates, board, turn);
 
+        if(turn) {
+            bool movable = canMovePiece(coordinates, board, white.getPieces());
+
+            board.printBoard();
+            while(!movable) {
+                std::cout << "You can't move that piece" << std::endl;
+                coordinates = promptUser();
+                validateInput(coordinates, board, turn);
+                movable = canMovePiece(coordinates, board, white.getPieces());
+            }
+
+            // Show the possible moves keeping Check in mind
+
+            // Validate where the piece moves
+
+            // Confirm if they want to move there
+
+            // Update board and mask
+        }
+        else {
+            bool movable = canMovePiece(coordinates, board, black.getPieces());
+
+            board.printBoard();
+            while(!movable) {
+                std::cout << "You can't move that piece" << std::endl;
+                coordinates = promptUser();
+                validateInput(coordinates, board, turn);
+                movable = canMovePiece(coordinates, board, black.getPieces());
+            }
+
+            // Show the possible moves keeping Check in mind
+
+            // Validate where the piece moves
+
+            // Confirm if they want to move there
+
+            // Update board and mask
+        }
 
         if(!turn) winning = true;
 

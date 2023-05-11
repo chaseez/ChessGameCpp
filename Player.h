@@ -6,8 +6,15 @@
 #define CHESSGAMECPP_PLAYER_H
 
 #include <vector>
+#include <string>
+
 #include "Piece.h"
 #include "Pawn.h"
+#include "Rook.h"
+#include "Knight.h"
+#include "Bishop.h"
+#include "Queen.h"
+#include "King.h"
 
 class Player {
 private:
@@ -24,6 +31,11 @@ public:
         this->team = team;
         pieces = std::vector<Piece*>(NUM_PIECES);
         fillPieces();
+    }
+
+    ~Player() {
+        int length = pieces.size();
+        for(int i = 0; i < length; ++i) delete pieces.at(i);
     }
 
     std::vector<Piece*> getPieces() const;

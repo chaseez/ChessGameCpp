@@ -5,17 +5,23 @@
 #include "Pawn.h"
 
 void Pawn::checkForCheck() {
-    std::cout << "Entering checkForCheck()\n" << std::endl;
+    std::cout << "Entering Pawn::checkForCheck()\n" << std::endl;
 }
 
 void Pawn::move() {
-    std::cout << "Entering move()" << std::endl;
+    std::cout << "Entering Pawn::move()" << std::endl;
 }
 
 void Pawn::take() {
-    std::cout << "Entering take()" << std::endl;
+    std::cout << "Entering Pawn::take()" << std::endl;
 }
 
 void Pawn::showMoves() {
-    std::cout << "Entering showMoves()" << std::endl;
+    std::cout << "Entering Pawn::showMoves()" << std::endl;
+}
+
+bool Pawn::canMove() {
+    std::cout << "Entering Pawn::canMove()" << std::endl;
+
+    return false;
 }
