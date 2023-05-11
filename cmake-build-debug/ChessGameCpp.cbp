@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ChessGameCpp"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ChessGameCpp">
+				<Option output="/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/ChessGameCpp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 ChessGameCpp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ChessGameCpp/fast">
+				<Option output="/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/ChessGameCpp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 ChessGameCpp/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/chasezundel/CLionProjects/ChessGameCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/chasezundel/CLionProjects/ChessGameCpp/Bishop.cpp">
+			<Option target="ChessGameCpp"/>
+		</Unit>
+		<Unit filename="/Users/chasezundel/CLionProjects/ChessGameCpp/Bishop.h">
+			<Option target="ChessGameCpp"/>
+		</Unit>
+		<Unit filename="/Users/chasezundel/CLionProjects/ChessGameCpp/Board.cpp">
+			<Option target="ChessGameCpp"/>
+		</Unit>
+		<Unit filename="/Users/chasezundel/CLionProjects/ChessGameCpp/Board.h">
+			<Option target="ChessGameCpp"/>
+		</Unit>
+		<Unit filename="/Users/chasezundel/CLionProjects/ChessGameCpp/King.cpp">
+			<Option target="ChessGameCpp"/>
+		</Unit>
+		<Unit filename="/Users/chasezundel/CLionProjects/ChessGameCpp/King.h">
+			<Option target="ChessGameCpp"/>
+		</Unit>
+		<Unit filename="/Users/chasezundel/CLionProjects/ChessGameCpp/Knight.cpp">
+			<Option target="ChessGameCpp"/>
+		</Unit>
+		<Unit filename="/Users/chasezundel/CLionProjects/ChessGameCpp/Knight.h">
+			<Option target="ChessGameCpp"/>
+		</Unit>
+		<Unit filename="/Users/chasezundel/CLionProjects/ChessGameCpp/Pawn.cpp">
+			<Option target="ChessGameCpp"/>
+		</Unit>
+		<Unit filename="/Users/chasezundel/CLionProjects/ChessGameCpp/Pawn.h">
+			<Option target="ChessGameCpp"/>
+		</Unit>
+		<Unit filename="/Users/chasezundel/CLionProjects/ChessGameCpp/Piece.h">
+			<Option target="ChessGameCpp"/>
+		</Unit>
+		<Unit filename="/Users/chasezundel/CLionProjects/ChessGameCpp/Player.cpp">
+			<Option target="ChessGameCpp"/>
+		</Unit>
+		<Unit filename="/Users/chasezundel/CLionProjects/ChessGameCpp/Player.h">
+			<Option target="ChessGameCpp"/>
+		</Unit>
+		<Unit filename="/Users/chasezundel/CLionProjects/ChessGameCpp/Queen.cpp">
+			<Option target="ChessGameCpp"/>
+		</Unit>
+		<Unit filename="/Users/chasezundel/CLionProjects/ChessGameCpp/Queen.h">
+			<Option target="ChessGameCpp"/>
+		</Unit>
+		<Unit filename="/Users/chasezundel/CLionProjects/ChessGameCpp/Rook.cpp">
+			<Option target="ChessGameCpp"/>
+		</Unit>
+		<Unit filename="/Users/chasezundel/CLionProjects/ChessGameCpp/Rook.h">
+			<Option target="ChessGameCpp"/>
+		</Unit>
+		<Unit filename="/Users/chasezundel/CLionProjects/ChessGameCpp/main.cpp">
+			<Option target="ChessGameCpp"/>
+		</Unit>
+		<Unit filename="/Users/chasezundel/CLionProjects/ChessGameCpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
