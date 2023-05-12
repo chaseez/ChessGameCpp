@@ -132,11 +132,7 @@ int main() {
 
     Board board = Board();
     board.populateBoard(white, black);
-
     board.populateMask();
-    std::cout << "Printing the mask: " << std::endl;
-    board.printMask();
-    std::cout << std::endl;
 
     board.printBoard();
 
@@ -156,44 +152,33 @@ int main() {
 
         validateInput(coordinates, board, turn);
 
-        if(turn) {
-            bool movable = canMovePiece(coordinates, board, white.getPieces());
+        bool movable;
 
-            board.printBoard();
-            while(!movable) {
-                std::cout << "You can't move that piece" << std::endl;
-                coordinates = promptUser();
-                validateInput(coordinates, board, turn);
-                movable = canMovePiece(coordinates, board, white.getPieces());
-            }
+        if(turn) movable = canMovePiece(coordinates, board, white.getPieces());
+        else movable = canMovePiece(coordinates, board, black.getPieces());
 
-            // Show the possible moves keeping Check in mind
+        board.printBoard();
+        while(!movable) {
+            std::cout << "You can't move that piece" << std::endl;
+            coordinates = promptUser();
+            validateInput(coordinates, board, turn);
 
-            // Validate where the piece moves
-
-            // Confirm if they want to move there
-
-            // Update board and mask
+            if(turn) movable = canMovePiece(coordinates, board, white.getPieces());
+            else movable = canMovePiece(coordinates, board, black.getPieces());
         }
-        else {
-            bool movable = canMovePiece(coordinates, board, black.getPieces());
 
-            board.printBoard();
-            while(!movable) {
-                std::cout << "You can't move that piece" << std::endl;
-                coordinates = promptUser();
-                validateInput(coordinates, board, turn);
-                movable = canMovePiece(coordinates, board, black.getPieces());
-            }
+        Piece* piece;
+        if(turn) piece = board.getPieceAt(coordinates, white.getPieces());
+        else piece = board.getPieceAt(coordinates, black.getPieces());
 
-            // Show the possible moves keeping Check in mind
+        // Show the possible moves keeping Check in mind
+        board.showPossibleMoves(piece);
 
-            // Validate where the piece moves
+        // Validate where the piece moves
 
-            // Confirm if they want to move there
+        // Confirm if they want to move there
 
-            // Update board and mask
-        }
+        // Update board and mask
 
         if(!turn) winning = true;
 

@@ -156,6 +156,11 @@ void Board::printMask() const {
     }
 }
 
+void Board::showPossibleMoves(Piece* piece) const {
+    std::cout << "Entering Board::showPossibleMoves()" << std::endl;
+
+}
+
 void Board::populateBoard(const Player& white, const Player& black) const {
     std::vector<Piece*> pieces = white.getPieces();
     int firstColumn = 0;
@@ -272,6 +277,23 @@ void Board::populateMask() {
     for(int i = 4; i < BOARD_WIDTH + 4; ++i)
         for(int j = 4; j < BOARD_HEIGHT + 4; ++j) mask[i][j] = board[i-4][j-4];
 
+}
+
+Piece* Board::getPieceAt(std::string coordinates, const std::vector<Piece*>& pieces) const {
+    // Making the ascii numbers correspond with a column
+    int col = std::tolower(coordinates[0]) - 'a';
+
+    // Adjusting the number to fit the array index
+    std::string temp = coordinates.substr(1);
+    int row = std::stoi(temp) - 1;
+
+    int pieceValue = board[row][col];
+
+    for(Piece* piece: pieces) {
+        if(piece->value == pieceValue - piece->team) {
+            if(piece->getRow() == row and piece->getColumn() == col) return piece;
+        }
+    }
 }
 
 int** Board::getBoard() const { return board; }

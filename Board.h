@@ -46,8 +46,10 @@ public:
     bool canMovePiece(Piece* piece) const;
     void printBoard() const;
     void printMask() const;
+    void showPossibleMoves(Piece* piece) const;
     void populateBoard(const Player& white, const Player& black) const;
     void populateMask();
+    Piece* getPieceAt(std::string coordinates, const std::vector<Piece*>& pieces) const;
     int** getBoard() const;
     int** getMask() const;
 
